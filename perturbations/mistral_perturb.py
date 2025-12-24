@@ -1,6 +1,9 @@
 import json
 from prompt import prompts
 import os
+os.environ["TRANSFORMERS_NO_TF"] = "1"
+os.environ["TRANSFORMERS_NO_FLAX"] = "1"
+
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
@@ -13,10 +16,10 @@ MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.2"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 model = AutoModelForCausalLM.from_pretrained(
     MODEL_NAME,
-    torch_dtype=torch.float16,
+    dtype=torch.float16,
     device_map="auto"
 )
-
+print("Model loaded OK")
 
 LANGUAGE_MAP = {
     "es": "Spanish",
