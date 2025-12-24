@@ -1,0 +1,16 @@
+python-dotenv 
+transformers 
+sentence-transformers 
+accelerate 
+torch 
+pandas 
+numpy 
+tqdm 
+scikit-learn 
+deep-translator 
+sacremoses 
+sacrebleu 
+bert-score 
+nltk 
+protobuf 
+requests
