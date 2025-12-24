@@ -1,11 +1,9 @@
 import json
 from prompt import prompts
 import os
-from huggingface_hub import login
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-login("HF_TOKEN")
 
 # =========================
 # MODEL
