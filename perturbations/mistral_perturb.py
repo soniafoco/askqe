@@ -63,8 +63,8 @@ for language in languages:
     for perturbation in perturbations:
         print("Perturbation: ", perturbation)
         
-        input_file = f"../data/processed/en-{language}.jsonl"
-        output_file = f"../data/perturbation/en-{language}/{perturbation}.jsonl"
+        input_file = f"data/processed/en-{language}.jsonl"
+        output_file = f"data/perturbation/en-{language}/{perturbation}.jsonl"
 
         with open(input_file, "r", encoding="utf-8") as file, open(output_file, "w", encoding="utf-8") as out_file:
             for line in file:
