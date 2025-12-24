@@ -14,3 +14,5 @@ bert-score
 nltk 
 protobuf 
 requests
+huggingface_hub
+sentencepiece
